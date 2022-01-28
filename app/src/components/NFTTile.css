@@ -1,0 +1,20 @@
+.item-container {
+    height: 340px;
+    width: 294px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-section {
+    height: 294px;
+    width: 294px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  
+  .avatar-section {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }

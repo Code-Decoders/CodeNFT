@@ -1,0 +1,12 @@
+.App {
+  font-family: "Lato";
+  font-size: 2.4vh;
+}
+
+
+
+.section {
+  text-align: left;
+  max-width: 720px;
+  margin: 4rem auto auto;
+}

@@ -1,0 +1,7 @@
+.grid-section {
+  display: grid;
+  grid-gap: 50px;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+}
+

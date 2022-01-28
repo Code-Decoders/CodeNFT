@@ -1,0 +1,75 @@
+.process-container {
+  height: 92vh;
+  width: 92.5vw;
+  background: #fbfdff;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 7.5vw;
+}
+
+.process-button {
+  width: 21vw;
+  height: 6.4vh;
+  border-radius: 0px 2vh 2vh 0px;
+  margin: 10px 0px;
+  font-weight: 600;
+  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 1vw;
+}
+
+.process-button.active {
+  background-color: #094eff;
+  color: white;
+}
+
+.process-button.completed {
+  background-color: transparent;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.process-button.inprogress {
+  background-color: transparent;
+  color: black;
+}
+
+.process-section {
+  height: 68vh;
+  width: 68vh;
+  background-color: white;
+  border: 1px dashed;
+  border-radius: 12px;
+  transition: 1s;
+}
+
+
+.fade {
+  transition: opacity 0.5s;
+}
+
+
+
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #094eff;
+  border-bottom: 8px solid #094eff;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

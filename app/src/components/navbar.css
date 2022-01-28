@@ -1,0 +1,103 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  width: 100%;
+  height: 8vh;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+@font-face{
+    font-family:"bryndan-write-book";
+    src:url("../fonts/Bryndan_Write.ttf") format("woff"),
+    url("../fonts/Bryndan_Write.ttf") format("opentype"),
+    url("../fonts/Bryndan_Write.ttf") format("truetype");
+}
+
+.logo-container {
+    height: 8vh;
+    background-color: #094EFF;
+    margin-right: 10px;
+    flex: 0.12;
+    font-family: "bryndan-write-book";
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+}
+
+.search-container {
+    flex: 0.26;
+    
+}
+
+.menu-container {
+    flex: 0.38;
+    display: flex;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.menu-item {
+    height: 100%;
+    width: 8.4vw;
+    margin: 0px 10px;
+}
+
+.menu-item-active {
+    position: absolute;
+    bottom: 0;
+    width: 8.4vw;
+    height: 6px;
+    background: #094EFF;
+}
+
+.menu-item-text{
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 2.7vh;
+    font-weight: 600;
+}
+
+
+.action-container {
+    flex: 0.24;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.outline-button {
+    cursor: pointer;
+    width: 36%;
+    position: relative;
+    height: 5vh;
+    border-radius: 40px;
+    align-items: center;
+    align-content: center;
+    background-color: #094EFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .outline-button:hover {
+    box-shadow: 0px 3px 11px 0px #094EFF;
+  }
+
+  .action-button {
+      cursor: pointer;
+      height: 4.5vh;
+      width: 4.5vh;
+      color: #949494;
+      padding: 0px 10px;
+  }

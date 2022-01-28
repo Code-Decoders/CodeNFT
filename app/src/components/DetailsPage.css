@@ -1,0 +1,50 @@
+.price-container {
+  width: 30vw;
+  height: 20vh;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin-top: 26px;
+}
+
+.nft-image-container {
+  width: 40vw;
+  height: 75vh;
+  border-radius: 15px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.detail-section {
+  flex: 1;
+  height: 84vh;
+  padding-top: 8vh;
+}
+
+.desc-text {
+  font-size: 2.4vh;
+  line-height: 41px;
+  padding-top: 20px;
+  letter-spacing: 0.03em;
+  white-space: pre-line;
+}
+
+.buy-button {
+  width: 6.5vw;
+  height: 5vh;
+  background-color: #094eff;
+  color: white;
+  font-size: 2.4vh;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.description-container {
+  width: 40vw;
+  height: 50vh;
+  overflow: scroll;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin-top: 26px;
+}

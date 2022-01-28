@@ -1,0 +1,10 @@
+.container {
+    width: 68vh;
+    height: 68vh;
+    background-color: white;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed ;
+}
