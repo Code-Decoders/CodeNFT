@@ -71,10 +71,10 @@ const MintNFT = ({ drizzle, drizzleState }) => {
       await market.methods["createMarketItem"].cacheSend(drizzle.web3.utils.toHex(code.address), tokenId, drizzle.web3.utils.toWei(`${price}`, "ether"), { value: drizzle.web3.utils.toWei("0.1", "ether"), gas: 3000000 })
       setTimeout(() => {
         setMsg("Created Market Item ...")
+        history.replace("")
       }, 3000);
       setLoading(false)
     }, 5000);
-    history.replace("")
   };
   function onProgressChange(index) {
     setTime(true);

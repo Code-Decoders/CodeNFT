@@ -35,7 +35,7 @@ const DetailsPage = ({ drizzle, drizzleState }) => {
 
     async function onSell() {
         console.log("Sold")
-        await market.methods["createMarketSale"].cacheSend(code.address, id, { from: drizzleState.accounts[1], value: state.price, gas: 3000000 })
+        await market.methods["createMarketSale"].cacheSend(code.address,id,{from: drizzleState.accounts[0],value: state.price,gas: 3000000})
     }
     return (
         loading ? <div>Loading...</div> :

@@ -20,33 +20,6 @@ const engine = new Styletron();
 
 export default ({ drizzle, drizzleState }) => {
   const location = useLocation()
-  // var portis = new Portis('f92f78e0-f2e3-4e31-a99e-8d34d4a7087f',{
-  //   nodeUrl: "https://rpc-mumbai.maticvigil.com/",
-  //   chainId:"80001",
-  // })
-  // var web3 = new Web3('ws://127.0.0.1:7545')
-
-  async function getData() {
-    const accounts = await drizzle.web3.eth.getAccounts()
-    const market = await drizzle.contracts.CodeNFTMarket;
-    const code = await drizzle.contracts.CodeNFT
-    // .methods["createToken"].cacheSend(market.address, "test6", {
-    //   gas: 300000,
-    // });
-    // const listing = await market.methods["createMarketItem"].cacheSend(drizzle.contracts.CodeNFT.address, drizzle.web3.utils.toHex("1"), 1000000, {
-    //   from: "0x80A97706c8859bAe70004aF44CdAb5D826A37dF0",
-    //   value: drizzle.web3.utils.toWei("0.1", "ether")
-    // })
-    console.log("test ", market.address, code.address)
-
-
-
-    // console.log(await drizzle.contracts.CodeNFTMarket.methods["createMarketItem"].cacheSend("0xf2D5BDc9C64ecd12CdA75957140D2d525dC7eBAA", 2, drizzle.web3.utils.toWei(`1`, "ether"),{value: drizzle.web3.utils.toWei("0.1", "ether")}))
-    // console.log(await drizzle.contracts.CodeNFTMarket.methods['getMarketItem'].cacheCall(0))
-  }
-  useEffect(() => {
-    getData()
-  }, [])
   return (
     <StyletronProvider value={engine} debug={debug} debugAfterHydration>
       <StyleReset />
